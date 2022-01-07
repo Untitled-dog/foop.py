@@ -1,0 +1,10 @@
+C#v=vv
+;print:foo
+f
+#f=f
+if:(a==b)
+;print:f
+print:$v$
+jump:($cl$+1)
+end:
+print:foo
