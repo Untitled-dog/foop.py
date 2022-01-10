@@ -2,11 +2,10 @@
 name = "foop.py"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Untitled_dog"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-iniconfig = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 

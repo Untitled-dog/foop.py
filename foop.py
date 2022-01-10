@@ -1,5 +1,3 @@
-
-#iniconfig
 import sys
 
 class foop:
@@ -81,11 +79,11 @@ class foop:
             line=line.replace("${0}$".format(str(c))
             ,str(self.var[c]))
           elif b == -1:
-            fooperror(cl,ogl)
+            self.fooperror(cl,ogl)
             print("|malformed varable statement")
             break
           else:
-            fooperror(cl,ogl)
+            self.fooperror(cl,ogl)
             print("|{0} is not a varable".format(c))
             break
           
@@ -140,17 +138,11 @@ class foop:
         
       cl+=1
     self.psflush()
-foopint=foop()
-foopint.varput("foo","foo")
 if len(sys.argv)>1:
-  #
-  #x=""
-  #for i in foo.phase(open("foop","r").read()):
-  #  x=x+i+"\n"
-  #open("foop.p","w").write(x)
-  #run=sys.argv[1]
-  foo.interpreter(open(run,"r").readlines())
+  foopint=foop()
+  foopint.interpreter(open(sys.argv[1],"r").readlines())
 else:
+  foopint=foop()
   f=""
   print('S|foop.py cml')
   print("S|type 'quit:' to exit ")
