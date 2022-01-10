@@ -8,15 +8,11 @@ class foop:
   class Foop_Error(Exception):
     #print("oof")
     pass
-  def psflush(self):
-    for i in self.ps:
-      print(i)
-    self.ps=[]
   def varput(self,var,val):
     self.var[var]=val
   def varpul(self):
     return self.var
-  def fooperror(cline,linestring):
+  def fooperror(self,cline,linestring):
     print("|FOOP ERROR")
     print("|at line {0}".format(cline))
     print("|{0}".format(linestring))
@@ -40,7 +36,7 @@ class foop:
       a+=1
     return c
   def interpreter(self,lines : list):
-    print(lines)
+    #print(lines)
     mode=[]
     cl=0;#curent line
     linesn=len(lines)
@@ -128,16 +124,14 @@ class foop:
           cl=int(line.split(":")[1])
           if linesn-1 < cl or -1 >= cl:raise self.Foop_Error("Can't jump out of index")
         if imb=="print":
-          self.ps.append(line.split(":")[1])
+          print(line.split(":")[1])
         if imb=="end":
           cl=linesn-1;self.ps.append("|end")
         if imb=="if":
           f=line.split(":")[1]
           if f == "true":
             mode.append("dent")
-        
       cl+=1
-    self.psflush()
 if len(sys.argv)>1:
   foopint=foop()
   foopint.interpreter(open(sys.argv[1],"r").readlines())
