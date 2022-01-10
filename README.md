@@ -1,6 +1,5 @@
 # foop.py
-[![Upload Python Package](https://github.com/Untitled-dog/foop.py/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Untitled-dog/foop.py/actions/workflows/python-publish.yml)
-this is ment to be interperated and easy to use. feel free to remake this in different codeing lanuages or projects if you give credit.
+this is ment to be interperated and easy to use. feel free to remake this in different coding lanuages, games, or projects. if publicly use, please give some credit
 
 it is ment to execute commands and skip the rest
 ```
