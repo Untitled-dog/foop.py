@@ -29,7 +29,7 @@ math and OPs are done like this
 (1-1)
 (1*1)
 (1/1)
-(1=1)
+(1==1)
 ```
 ### Layering
 the scripts starts the lowest layer layers are shown by `;` every time an `if:` is true, it moves up an layer, if there is none, it will move down a layer
