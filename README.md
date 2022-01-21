@@ -1,5 +1,5 @@
 # foop.py
-this is ment to be interperated and easy to use. feel free to remake this in different coding lanuages, games, or projects. if publicly use, please give some credit
+this is ment to be interperated and easy to use. feel free to remake this in different coding lanuages, games, or projects.
 
 it is ment to execute commands and skip the rest
 ```
